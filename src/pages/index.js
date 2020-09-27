@@ -15,6 +15,16 @@ import { SiWebpack } from 'react-icons/si'
 
 import ContentSection from '../components/ContentSection'
 
+import b2ba from '../assets/img/b2b-autotrader.jpg'
+import monarch from '../assets/img/monarch.jpg'
+import sacscoc from '../assets/img/sacscoc.jpg'
+import monarchmap from '../assets/img/monarchmap.jpg'
+import act from '../assets/img/act.jpg'
+import nada from '../assets/img/nada.jpg'
+import rvs from '../assets/img/rvs.jpg'
+import express from '../assets/img/express.jpg'
+import jg2 from '../assets/img/jg2.jpg'
+
 const IndexPage = ({ data }) => (
   <>
     <ContentSection>
@@ -45,8 +55,8 @@ const IndexPage = ({ data }) => (
     <ContentSection>
       <h2>My Experience</h2>
 
-      <div className="flex-row flex-align-center">
-        <div className="flex-col flex-col-4">
+      <div className="flex-row flex-align-center flex-row-mobile-column-reverse">
+        <div className="flex-col flex-col-4 flex-col-mobile-full">
           <div className="content-image">
             <Img
               fluid={data.file.childImageSharp.fluid}
@@ -55,7 +65,7 @@ const IndexPage = ({ data }) => (
           </div>
         </div>
 
-        <div className="flex-col flex-col-8">
+        <div className="flex-col flex-col-8 flex-col-mobile-full">
           <ul>
             <li>
               I have <strong>12+ years</strong> experience in frontend web
@@ -109,24 +119,51 @@ const IndexPage = ({ data }) => (
     <ContentSection>
       <h2>FrontEnd Web Development Projects</h2>
 
-      <ul>
-        <li>
+      <ul className="project-list">
+        <li className="project-list-project">
           <a
             href="https://b2b.autotrader.com"
             rel="noopener noreferrer"
             target="_blank"
           >
-            b2b.autotrader.com
+            <img
+              className="project-list-image"
+              src={b2ba}
+              alt="B2B Autotrader Homepage"
+            />
+
+            <div className="project-list-title">b2b.autotrader.com</div>
+
+            <div className="project-list-description">
+              I led the dev team for AutoTrader's B2B all new website, built
+              from the ground up leveraging the WordPress block editor and a
+              component driven build system using Storybook. I did a large part
+              of the development for this site.
+            </div>
           </a>
         </li>
 
-        <li>
+        <li className="project-list-project">
           <a
             href="https://www.monarchprivate.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Monarch ESG
+            <img
+              className="project-list-image"
+              src={monarch}
+              alt="Monarch ESG Homepage"
+            />
+
+            <div className="project-list-title">Monarch ESG</div>
+
+            <div className="project-list-description">
+              I led the dev team for the Monarch ESG website using the WordPress
+              block editor and a component driven build system using Storybook.
+              I did some dev work on this site including a Vue.js state map
+              application, but development on this site was largely a team
+              effort.
+            </div>
           </a>
         </li>
       </ul>
@@ -135,44 +172,82 @@ const IndexPage = ({ data }) => (
     <ContentSection>
       <h2>Vue.js Apps</h2>
 
-      <ul>
-        <li>
+      <ul className="project-list">
+        <li className="project-list-project">
           <a
-            href="https://b2b.autotrader.com"
+            href="https://www.monarchprivate.com/esg-investment-types/state-tax-credits/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            b2b.autotrader.com
+            <img
+              className="project-list-image"
+              src={monarchmap}
+              alt="Monarch ESG State Map Tool"
+            />
+
+            <div className="project-list-title">
+              Monarch ESG State Tax Credits Map
+            </div>
+
+            <div className="project-list-description" />
           </a>
         </li>
 
-        <li>
+        <li className="project-list-project">
           <a
-            href="https://www.monarchprivate.com/"
+            href="https://sacscoc.org/institutions/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Monarch ESG
+            <img
+              className="project-list-image"
+              src={sacscoc}
+              alt="SACS COC Instituion Search Page"
+            />
+
+            <div className="project-list-title">
+              SACS COC Institution Search
+            </div>
+
+            <div className="project-list-description" />
           </a>
         </li>
 
-        <li>
+        <li className="project-list-project">
           <a
-            href="https://b2b.autotrader.com"
+            href="https://assessmentplanner.act.org/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            b2b.autotrader.com
+            <img
+              className="project-list-image"
+              src={act}
+              alt="ACT Online Assessment Planner Tool"
+            />
+
+            <div className="project-list-title">ACT Assessment Planner</div>
+
+            <div className="project-list-description" />
           </a>
         </li>
 
-        <li>
+        <li className="project-list-project">
           <a
-            href="https://www.monarchprivate.com/"
+            href="https://www.coxautoinc.com/events/nada2020/autotrader/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Monarch ESG
+            <img
+              className="project-list-image"
+              src={nada}
+              alt="NADA Signup Page"
+            />
+
+            <div className="project-list-title">
+              Cox Automotive NADA Demo Signups
+            </div>
+
+            <div className="project-list-description" />
           </a>
         </li>
       </ul>
@@ -181,34 +256,64 @@ const IndexPage = ({ data }) => (
     <ContentSection>
       <h2>React.js Apps</h2>
 
-      <ul>
-        <li>
+      <ul className="project-list">
+        <li className="project-list-project">
           <a
-            href="https://b2b.autotrader.com"
+            href="https://rvs.autotrader.com/rvs-for-sale/airstream-ambassador-for-sale?year_max=1976&year_min=1965"
             rel="noopener noreferrer"
             target="_blank"
           >
-            b2b.autotrader.com
+            <img
+              className="project-list-image"
+              src={rvs}
+              alt="RVs.Autorader.com Search Results Page"
+            />
+
+            <div className="project-list-title">
+              RVs on Autotrader Search Results
+            </div>
+
+            <div className="project-list-description" />
           </a>
         </li>
 
-        <li>
+        <li className="project-list-project">
           <a
-            href="https://www.monarchprivate.com/"
+            href="https://www.mymanheim.com/express/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Monarch ESG
+            <img
+              className="project-list-image"
+              src={express}
+              alt="Manheim Express Homepage"
+            />
+
+            <div className="project-list-title">
+              Contributed React Native components on Manheim Express
+            </div>
+
+            <div className="project-list-description" />
           </a>
         </li>
 
-        <li>
+        <li className="project-list-project">
           <a
-            href="https://b2b.autotrader.com"
+            href="https://prism.coxautoinc.com/Getting-Started"
             rel="noopener noreferrer"
             target="_blank"
           >
-            b2b.autotrader.com
+            <img
+              className="project-list-image"
+              src={jg2}
+              alt="Cox Automotive Prism Library Homepage"
+            />
+
+            <div className="project-list-title">John Graham's Portfolio</div>
+
+            <div className="project-list-description">
+              This very site is built using Gatsby.js and React.
+            </div>
           </a>
         </li>
       </ul>

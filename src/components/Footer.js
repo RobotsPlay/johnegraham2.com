@@ -5,13 +5,13 @@ import PageFooterStyles from '../styles/PageFooterStyles'
 const Footer = () => (
   <PageFooterStyles className="page-footer">
     <div className="container">
-      <div className="flex-row flex-justify-space-between">
-        <div className="flex-col flex-col-6">
-          <div className="copyright">
+      <div className="flex-row flex-justify-space-between flex-row-mobile-column-reverse">
+        <div className="flex-col flex-col-6 flex-col-mobile-full">
+          <div className="copyright text-center-mobile">
             © {new Date().getFullYear()} John Graham
           </div>
         </div>
-        <div className="flex-col flex-col-6 text-right">
+        <div className="flex-col flex-col-6 flex-col-mobile-full text-right text-center-mobile">
           <a
             href="https://twitter.com/RobotsPlay"
             rel="noopener noreferrer"

@@ -22,11 +22,69 @@ const ContentSectionStyles = styled.section`
     width: 100%;
     background: var(--darkorange);
     padding: 1px;
+
+    @media (max-width: 767px) {
+      margin: var(--gutter) auto 0;
+      max-width: 376px;
+    }
   }
 
   .content-image img {
     display: block;
     width: 100%;
+  }
+
+  .project-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 -1.8rem -3.6rem !important;
+
+    &-project {
+      width: calc(33.33% - var(--gutter));
+      margin: 0 var(--gutter-half) var(--gutter);
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 1023px) {
+        width: calc(50% - var(--gutter));
+      }
+
+      @media (max-width: 580px) {
+        width: calc(100%);
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: var(--verylightgreen);
+        border: 1px solid var(--lightgreen);
+        padding: var(--gutter);
+        text-decoration: none;
+      }
+    }
+
+    &-image {
+      display: block;
+      max-width: 100%;
+    }
+
+    &-title {
+      margin-top: var(--gutter);
+      font-size: 2.4rem;
+      line-height: 1.2;
+    }
+
+    &-description {
+      margin-top: var(--gutter-half);
+      font-size: 1.6rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.8rem;
+      }
+    }
   }
 `
 

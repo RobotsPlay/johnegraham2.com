@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
     --brown: #591F12;
     --green: #0E5952;
     --lightgreen: #89B69D;
+    --verylightgreen: #e6f1eb;
 
     // layout
     --gutter: 3.6rem;
