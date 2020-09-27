@@ -24,6 +24,7 @@ import nada from '../assets/img/nada.jpg'
 import rvs from '../assets/img/rvs.jpg'
 import express from '../assets/img/express.jpg'
 import jg2 from '../assets/img/jg2.jpg'
+import Button from '../components/Button'
 
 const IndexPage = ({ data }) => (
   <>
@@ -47,6 +48,13 @@ const IndexPage = ({ data }) => (
             the end of 2014. In addition to assembling HTML, CSS and Javascript,
             I lead a team of 5 developers. I am responsible for developing and
             implementing best practices and processes for the team.
+          </p>
+
+          <p>
+            <Button
+              label="Contact Me"
+              onClick={() => window.open('https://twitter.com/RobotsPlay')}
+            />
           </p>
         </div>
       </div>
@@ -76,6 +84,10 @@ const IndexPage = ({ data }) => (
             </li>
             <li>
               I have managed a team of <strong>up to 7</strong> frontend devs.
+            </li>
+            <li>
+              Over the years, I have built dozens and dozens of websites,
+              WordPress sites and custom WordPress plugins.
             </li>
           </ul>
         </div>
