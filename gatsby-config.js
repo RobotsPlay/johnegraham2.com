@@ -2,9 +2,10 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: `JohnEGraham.com`,
-    description: `Personal/Portolio site of John Graham`,
+    title: `John Graham | FrontEnd Web Developer`,
+    description: `The personal frontend web development portolio site of John Graham`,
     author: `@RobotsPlay`,
+    siteUrl: 'https://johnegraham2.com',
   },
   plugins: [
     {
@@ -14,7 +15,16 @@ module.exports = {
         path: path.join(__dirname, `src`, `assets`, `img`),
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://johnegraham2.com',
+        sitemap: 'https://johnegraham2.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
   ],
 }

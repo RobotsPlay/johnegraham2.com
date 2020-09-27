@@ -101,8 +101,8 @@ const Typography = createGlobalStyle`
 
   
   a {
-    color: var(--orange);
-    text-decoration: none;
+    color: var(--green);
+    text-decoration: underline;
   }
 
   pre,
