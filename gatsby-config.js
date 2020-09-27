@@ -19,12 +19,12 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://johnegraham2.com',
-        sitemap: 'https://johnegraham2.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
   ],
 }
