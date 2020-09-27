@@ -1,15 +1,7 @@
 import styled from 'styled-components'
 
 const ContentSectionStyles = styled.section`
-  padding: var(--gutter) 0;
-
-  &:first-child {
-    padding-top: var(--gutter-double);
-  }
-
-  &:last-child {
-    padding-bottom: var(--gutter-double);
-  }
+  padding: var(--gutter-double) 0;
 
   &:nth-child(even) {
     background: var(--lightyellow);

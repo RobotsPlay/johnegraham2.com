@@ -3,12 +3,12 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyles = createGlobalStyle`
   :root {
     // colors
-    --darkorange: #BF7111;
-    --orange: #CC6D1E;
+    --darkorange: #9b5a0a;
+    --orange: #BF7111;
     --black: #240C07;
-    --yellow: #F2CF66;
-    --lightyellow: #F4EFDD;
-    --white: #F3F3EB;
+    --yellow: #F2E7C7;
+    --lightyellow: #FFFFF6;
+    --white: #fff;
     --brown: #591F12;
     --green: #0E5952;
     --lightgreen: #89B69D;
