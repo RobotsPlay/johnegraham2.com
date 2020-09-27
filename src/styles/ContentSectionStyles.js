@@ -21,7 +21,7 @@ const ContentSectionStyles = styled.section`
   .content-image {
     width: 100%;
     background: var(--darkorange);
-    padding: 3px;
+    padding: 1px;
   }
 
   .content-image img {

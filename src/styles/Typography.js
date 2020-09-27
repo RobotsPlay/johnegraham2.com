@@ -121,6 +121,20 @@ const Typography = createGlobalStyle`
   .text-center {
     text-align: center;
   }
+
+  @media (max-width: 767px) {
+   .text-center-mobile {
+     text-align: center;
+   } 
+   
+   .text-right-mobile {
+      text-align: right;
+    } 
+
+    .text-left-mobile {
+      text-align: left;
+    } 
+  }
 `
 
 export default Typography

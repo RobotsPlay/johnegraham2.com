@@ -20,6 +20,11 @@ const PageHeaderStyles = styled.header`
     border-top: 1px solid var(--lightgreen);
     width: 70%;
     margin-left: 30%;
+
+    @media (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .bio-image {
@@ -28,6 +33,12 @@ const PageHeaderStyles = styled.header`
     border: var(--gutter-half) solid var(--orange);
     max-width: 340px;
     margin-bottom: -100%;
+
+    @media (max-width: 767px) {
+      max-width: 150px;
+      margin: 0 auto var(--gutter);
+      transform: none;
+    }
   }
 
   .bio-image img {

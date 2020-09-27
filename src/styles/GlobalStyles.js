@@ -17,6 +17,8 @@ const GlobalStyles = createGlobalStyle`
     --gutter: 3.6rem;
     --gutter-double: 7.2rem;
     --gutter-half: 1.8rem;
+    --gutter-neg: -3.6rem;
+    --gutter-half-neg: -1.8rem;
   }
 
   * {
@@ -30,7 +32,6 @@ const GlobalStyles = createGlobalStyle`
   body {
     background var(--white);
   }
-
 `
 
 export default GlobalStyles

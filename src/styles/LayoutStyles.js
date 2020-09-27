@@ -63,7 +63,16 @@ const LayoutStyles = createGlobalStyle`
     width: 75%;
   }
 
+  @media (max-width: 767px) {
+    .flex-col-mobile-full {
+      width: 100%;
+      padding: 0;
+    }
 
+    .flex-row-mobile-column-reverse {
+      flex-direction: column-reverse;
+    }
+  }
 `
 
 export default LayoutStyles
