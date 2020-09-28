@@ -4,14 +4,15 @@ const ContactPanelStyles = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   max-width: 450px;
   background: var(--white);
   padding: var(--gutter);
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.25);
   transition: transform 0.2s ease-in-out;
   transform: translateX(-100%);
+  overflow-y: auto;
 
   .contact-panel-title {
     font-size: 3.2rem;
