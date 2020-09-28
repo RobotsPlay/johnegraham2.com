@@ -138,9 +138,9 @@ const IndexPage = ({ data }) => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img
+            <Img
               className="project-list-image"
-              src={b2ba}
+              fluid={getImageByFilename(data.allImageSharp, 'b2b-autotrader.jpg')?.fluid}
               alt="B2B Autotrader Homepage"
             />
 
@@ -161,9 +161,9 @@ const IndexPage = ({ data }) => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img
+            <Img
               className="project-list-image"
-              src={monarch}
+              fluid={getImageByFilename(data.allImageSharp, 'monarch.jpg')?.fluid}
               alt="Monarch ESG Homepage"
             />
 
@@ -191,9 +191,9 @@ const IndexPage = ({ data }) => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img
+            <Img
               className="project-list-image"
-              src={monarchmap}
+              fluid={getImageByFilename(data.allImageSharp, 'monarchmap.jpg')?.fluid}
               alt="Monarch ESG State Map Tool"
             />
 
@@ -211,9 +211,9 @@ const IndexPage = ({ data }) => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img
+            <Img
               className="project-list-image"
-              src={sacscoc}
+              fluid={getImageByFilename(data.allImageSharp, 'sacscoc.jpg')?.fluid}
               alt="SACS COC Instituion Search Page"
             />
 
@@ -231,9 +231,9 @@ const IndexPage = ({ data }) => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img
+            <Img
               className="project-list-image"
-              src={act}
+              fluid={getImageByFilename(data.allImageSharp, 'act.jpg')?.fluid}
               alt="ACT Online Assessment Planner Tool"
             />
 
@@ -249,9 +249,9 @@ const IndexPage = ({ data }) => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img
+            <Img
               className="project-list-image"
-              src={nada}
+              fluid={getImageByFilename(data.allImageSharp, 'nada.jpg')?.fluid}
               alt="NADA Signup Page"
             />
 
@@ -275,9 +275,9 @@ const IndexPage = ({ data }) => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img
+            <Img
               className="project-list-image"
-              src={rvs}
+              fluid={getImageByFilename(data.allImageSharp, 'rvs.jpg')?.fluid}
               alt="RVs.Autorader.com Search Results Page"
             />
 
@@ -295,9 +295,9 @@ const IndexPage = ({ data }) => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img
+            <Img
               className="project-list-image"
-              src={express}
+              fluid={getImageByFilename(data.allImageSharp, 'express.jpg')?.fluid}
               alt="Manheim Express Homepage"
             />
 
@@ -315,9 +315,9 @@ const IndexPage = ({ data }) => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img
+            <Img
               className="project-list-image"
-              src={jg2}
+              fluid={getImageByFilename(data.allImageSharp, 'jg2.jpg')?.fluid}
               alt="Cox Automotive Prism Library Homepage"
             />
 
@@ -333,12 +333,34 @@ const IndexPage = ({ data }) => (
   </>
 )
 
+const getImageByFilename = (allImages, filename) => {
+  let matchedImage = null;
+  allImages.edges.forEach((edge) => {
+    if(edge.node.fluid.originalName === filename) {
+      matchedImage = edge.node;
+    }
+  });
+
+  return matchedImage;
+}
+
 export const query = graphql`
   query {
     file(relativePath: { eq: "code.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 376) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    allImageSharp {
+      edges {
+        node {
+          id
+          fluid(maxHeight: 200, maxWidth: 200) {
+            originalName
+            ...GatsbyImageSharpFluid     
+          }
         }
       }
     }
