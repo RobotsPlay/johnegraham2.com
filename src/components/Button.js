@@ -2,8 +2,8 @@ import React from 'react'
 
 import ButtonStyles from '../styles/ButtonStyles'
 
-const Button = ({ onClick = () => {}, label }) => (
-  <ButtonStyles className="button" onClick={onClick}>
+const Button = ({ onClick = () => {}, label, type = 'button' }) => (
+  <ButtonStyles type={type} className="button" onClick={onClick}>
     {label}
   </ButtonStyles>
 )

@@ -8,9 +8,7 @@ const LayoutStyles = createGlobalStyle`
   }
 
   .page-main {
-    background: var(--white);
     color: var(--brown);
-    z-index: 1;
   }
 
   .container {

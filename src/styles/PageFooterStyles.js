@@ -16,24 +16,6 @@ const PageFooterStyles = styled.footer`
       margin-top: var(--gutter-half);
     }
   }
-
-  .footer-social-link {
-    display: inline-block;
-    margin: 0 var(--gutter-half);
-    color: var(--black);
-
-    @media (max-width: 767px) {
-      font-size: 4rem;
-    }
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
 `
 
 export default PageFooterStyles

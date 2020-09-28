@@ -1,7 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
 
-import bioImage from '../assets/img/0.jpg'
 import PageHeaderStyles from '../styles/PageHeaderStyles'
 
 const Header = ({ images }) => (

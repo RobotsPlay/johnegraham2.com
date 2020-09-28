@@ -4,7 +4,6 @@ const PageHeaderStyles = styled.header`
   padding: var(--gutter) 0;
   background: var(--green);
   color: var(--lightyellow);
-  z-index: 2;
   border-top: 0.4rem solid var(--lightgreen);
   border-bottom: 1.2rem solid var(--lightgreen);
 
