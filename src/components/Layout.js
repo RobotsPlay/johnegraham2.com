@@ -9,7 +9,8 @@ import GlobalStyles from '../styles/GlobalStyles'
 import Typography from '../styles/Typography'
 import LayoutStyles from '../styles/LayoutStyles'
 import SkillListStyles from '../styles/SkillListStyles'
-import { siteMetadata } from '../../gatsby-config'
+
+import favicon from '../../static/favicon.png'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(
@@ -43,6 +44,7 @@ const Layout = ({ children }) => {
         <meta charSet="utf-8" />
         <title>{data.site.siteMetadata.title}</title>
         <meta name="description" content={data.site.siteMetadata.description} />
+        <link rel="icon" href={favicon} />
         <html lang="en" />
       </Helmet>
 
