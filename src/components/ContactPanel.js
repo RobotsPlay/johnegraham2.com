@@ -29,6 +29,7 @@ const ContactPanel = ({ open = false, openToggle = () => {} }) => {
           action="/thanks/"
           className="form" 
           data-netlify
+          netlify-honeypot="bot-field"
         >
           <label className="form-label" htmlFor="your-name">
             Your Name
@@ -57,6 +58,9 @@ const ContactPanel = ({ open = false, openToggle = () => {} }) => {
             />
             I am not a 3rd party recruiter
           </label>
+
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
 
           <Button type="submit" label="Send" />
         </form>
