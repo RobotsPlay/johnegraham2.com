@@ -165,6 +165,10 @@ const IndexPage = ({ data }) => {
                 component driven build system using Storybook. I did a large
                 part of the development for this site.
               </div>
+
+              <div className="project-list-note">
+                *for AirTight Design
+              </div>
             </a>
           </li>
 
@@ -190,6 +194,10 @@ const IndexPage = ({ data }) => {
                 Storybook. I did some dev work on this site including a Vue.js
                 state map application, but development on this site was largely
                 a team effort.
+              </div>
+
+              <div className="project-list-note">
+                *for AirTight Design
               </div>
             </a>
           </li>
@@ -219,7 +227,13 @@ const IndexPage = ({ data }) => {
                 Monarch ESG State Tax Credits Map
               </div>
 
-              <div className="project-list-description" />
+              <div className="project-list-description">
+                This Vue.js app loads and displays state data from an API. It presents state data based on the user's ineraction with an SVG map. I build this entire app.
+              </div>
+
+              <div className="project-list-note">
+                *for AirTight Design
+              </div>
             </a>
           </li>
 
@@ -241,7 +255,13 @@ const IndexPage = ({ data }) => {
                 SACS COC Institution Search
               </div>
 
-              <div className="project-list-description" />
+              <div className="project-list-description">
+                This Vue.js app searches, loads and dislays institution data loaded from an API. I build this entire app.
+              </div>
+
+              <div className="project-list-note">
+                *for AirTight Design
+              </div>
             </a>
           </li>
 
@@ -259,7 +279,13 @@ const IndexPage = ({ data }) => {
 
               <div className="project-list-title">ACT Assessment Planner</div>
 
-              <div className="project-list-description" />
+              <div className="project-list-description">
+                This Vue.js app creates a grid of current and propsed solutions based on user input. I build this entire app.
+              </div>
+
+              <div className="project-list-note">
+                *for AirTight Design
+              </div>
             </a>
           </li>
 
@@ -281,7 +307,13 @@ const IndexPage = ({ data }) => {
                 Cox Automotive NADA Demo Signups
               </div>
 
-              <div className="project-list-description" />
+              <div className="project-list-description">
+                This Vue.js app schedules demos for the NADA tradeshow, offers recommendations and builds a user schedule. Currently, signups are closed, but they'll open back up in November or December. I build this entire app.
+              </div>
+
+              <div className="project-list-note">
+                *for AirTight Design
+              </div>
             </a>
           </li>
         </ul>
@@ -307,7 +339,13 @@ const IndexPage = ({ data }) => {
                 RVs on Autotrader Search Results
               </div>
 
-              <div className="project-list-description" />
+              <div className="project-list-description">
+                This React.js app allows a user to search for available RVs. I worked with the development team that built all of the interface components.
+              </div>
+
+              <div className="project-list-note">
+                *for AirTight Design
+              </div>
             </a>
           </li>
 
@@ -329,7 +367,13 @@ const IndexPage = ({ data }) => {
                 Contributed React Native components on Manheim Express
               </div>
 
-              <div className="project-list-description" />
+              <div className="project-list-description">
+                I built a color picker component and a hanful of others in React Natvie for this mobile app.
+              </div>
+
+              <div className="project-list-note">
+                *for AirTight Design
+              </div>
             </a>
           </li>
 

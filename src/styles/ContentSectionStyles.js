@@ -85,6 +85,12 @@ const ContentSectionStyles = styled.section`
         font-size: 1.8rem;
       }
     }
+
+    &-note {
+      margin-top: var(--gutter-half);
+      font-size: 1.4rem;
+      text-align: right;
+    }
   }
 `
 
