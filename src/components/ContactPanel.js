@@ -5,9 +5,9 @@ import Button from './Button'
 import SocialLinks from './SocialLinks'
 
 const ContactPanel = ({ open = false, openToggle = () => {} }) => {
-  const submitContactForm = e => {
-    e?.preventDefault()
-  }
+  // const submitContactForm = e => {
+  //   e?.preventDefault()
+  // }
 
   return (
     <ContactPanelStyles className={`contact-panel ${open ? 'open' : ''}`}>
@@ -24,20 +24,20 @@ const ContactPanel = ({ open = false, openToggle = () => {} }) => {
 
         <h4>Or, send me a message:</h4>
 
-        <form className="form" onSubmit={submitContactForm}>
+        <form className="form" data-netlify>
           <label className="form-label" htmlFor="your-name">
             Your Name
-            <input type="text" className="form-field text" id="your-name" />
+            <input type="text" className="form-field text" id="your-name" required />
           </label>
 
           <label className="form-label" htmlFor="your-email">
             Your Email
-            <input type="email" className="form-field text" id="your-email" />
+            <input type="email" className="form-field text" id="your-email" required />
           </label>
 
           <label className="form-label" htmlFor="your-message">
             Message
-            <textarea className="form-field textarea" id="your-message" />
+            <textarea className="form-field textarea" id="your-message" required />
           </label>
 
           <label
@@ -48,6 +48,7 @@ const ContactPanel = ({ open = false, openToggle = () => {} }) => {
               type="checkbox"
               className="form-field checkbox"
               id="not-a-recruiter"
+              required
             />
             I am not a 3rd party recruiter
           </label>
