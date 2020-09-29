@@ -24,7 +24,12 @@ const ContactPanel = ({ open = false, openToggle = () => {} }) => {
 
         <h4>Or, send me a message:</h4>
 
-        <form className="form" data-netlify>
+        <form name="contact"
+          method="post"
+          action="/thanks/"
+          className="form" 
+          data-netlify
+        >
           <label className="form-label" htmlFor="your-name">
             Your Name
             <input type="text" className="form-field text" id="your-name" required />
