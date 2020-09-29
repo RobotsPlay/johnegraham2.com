@@ -33,17 +33,17 @@ const ContactPanel = ({ open = false, openToggle = () => {} }) => {
         >
           <label className="form-label" htmlFor="your-name">
             Your Name
-            <input type="text" className="form-field text" id="your-name" required />
+            <input type="text" className="form-field text" id="your-name" name="Name" required />
           </label>
 
           <label className="form-label" htmlFor="your-email">
             Your Email
-            <input type="email" className="form-field text" id="your-email" required />
+            <input type="email" className="form-field text" id="your-email" name="Email" required />
           </label>
 
           <label className="form-label" htmlFor="your-message">
             Message
-            <textarea className="form-field textarea" id="your-message" required />
+            <textarea className="form-field textarea" id="your-message" name="Message" required />
           </label>
 
           <label
@@ -55,6 +55,7 @@ const ContactPanel = ({ open = false, openToggle = () => {} }) => {
               className="form-field checkbox"
               id="not-a-recruiter"
               required
+              name="No Recuiters"
             />
             I am not a 3rd party recruiter
           </label>
