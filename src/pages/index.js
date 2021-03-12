@@ -157,7 +157,7 @@ const IndexPage = ({ data }) => {
                 alt="KBB Autotrader OEM Homepage"
               />
 
-              <div className="project-list-title">kbb-autotrader-oem.com</div>
+              <div className="project-list-title">Camp 360</div>
 
               <div className="project-list-description">
                 I created this one page site geared to Autotrader and Kelley Blue Book's OEM Customers. Includes a small Vue.js application for the contact form. I did all the work for the homepage except for the mini navigation and the "C" image animation. A blog section has since been added to the site.
