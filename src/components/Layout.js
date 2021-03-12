@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
             description
           }
         }
-        file(relativePath: { eq: "0.jpg" }) {
+        file(relativePath: { eq: "johngraham.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 304) {
               ...GatsbyImageSharpFluid

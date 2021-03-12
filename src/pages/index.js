@@ -109,31 +109,31 @@ const IndexPage = ({ data }) => {
 
         <ul className="skill-list">
           <li className="skill-list-skill">
-            <FaHtml5 className="skill-list-icon" /> HTML
+            <FaHtml5 className="skill-list-icon" aria-label="HTML5 Logo" /> HTML
           </li>
           <li className="skill-list-skill">
-            <FaCss3Alt className="skill-list-icon" /> CSS
+            <FaCss3Alt className="skill-list-icon" aria-label="CSS3 Logo" /> CSS
           </li>
           <li className="skill-list-skill">
-            <FaJsSquare className="skill-list-icon" /> JavaScript
+            <FaJsSquare className="skill-list-icon" aria-label="JavaScript Logo" /> JavaScript
           </li>
           <li className="skill-list-skill">
-            <FaReact className="skill-list-icon" /> React
+            <FaReact className="skill-list-icon" aria-label="React Logo" /> React
           </li>
           <li className="skill-list-skill">
-            <FaVuejs className="skill-list-icon" /> Vue.js
+            <FaVuejs className="skill-list-icon" aria-label="Vue.js Logo" /> Vue.js
           </li>
           <li className="skill-list-skill">
-            <SiWebpack className="skill-list-icon" /> Webpack
+            <SiWebpack className="skill-list-icon" aria-label="Webpack Logo" /> Webpack
           </li>
           <li className="skill-list-skill">
-            <FaNpm className="skill-list-icon" /> npm
+            <FaNpm className="skill-list-icon" aria-label="NPM Logo" /> npm
           </li>
           <li className="skill-list-skill">
-            <FaWordpressSimple className="skill-list-icon" /> WordPress
+            <FaWordpressSimple className="skill-list-icon" aria-label="WordPress Logo" /> WordPress
           </li>
           <li className="skill-list-skill">
-            <FaGit className="skill-list-icon" /> git
+            <FaGit className="skill-list-icon" aria-label="Git Logo" /> git
           </li>
         </ul>
       </ContentSection>
