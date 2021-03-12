@@ -144,6 +144,31 @@ const IndexPage = ({ data }) => {
         <ul className="project-list">
           <li className="project-list-project">
             <a
+              href="https://kbb-autotrader-oem.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Img
+                className="project-list-image"
+                fluid={
+                  getImageByFilename(data.allImageSharp, 'kbb-autotrader.jpg')
+                    ?.fluid
+                }
+                alt="KBB Autotrader OEM Homepage"
+              />
+
+              <div className="project-list-title">kbb-autotrader-oem.com</div>
+
+              <div className="project-list-description">
+                A one page site geared to Autotrader and Kelley Blue Book's OEM Customers. Includes a small Vue.js application for the contact form. I did all the work for the homepage except for the mini navigation and the "C" image animation.
+              </div>
+
+              <div className="project-list-note">*for AirTight Design</div>
+            </a>
+          </li>
+
+          <li className="project-list-project">
+            <a
               href="https://b2b.autotrader.com"
               rel="noopener noreferrer"
               target="_blank"
