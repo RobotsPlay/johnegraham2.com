@@ -389,7 +389,7 @@ const IndexPage = ({ data }) => {
 
               <div className="project-list-description">
                 I built a color picker component and a hanful of others in React
-                Natvie for this mobile app.
+                Native for this mobile app.
               </div>
 
               <div className="project-list-note">*for AirTight Design</div>
