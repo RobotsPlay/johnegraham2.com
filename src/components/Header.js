@@ -1,9 +1,9 @@
 import React from 'react'
-import Img from 'gatsby-image'
+import { StaticImage } from "gatsby-plugin-image"
 
 import PageHeaderStyles from '../styles/PageHeaderStyles'
 
-const Header = ({ images }) => (
+const Header = () => (
   <PageHeaderStyles className="page-header">
     <div className="container">
       <div className="flex-row flex-wrap flex-row-mobile-column-reverse">
@@ -16,7 +16,14 @@ const Header = ({ images }) => (
 
         <div className="flex-col flex-col-4 flex-col-mobile-full">
           <div className="bio-image">
-            <Img fluid={images.file.childImageSharp.fluid} alt="John Graham" />
+            <StaticImage
+              src="../assets/img/johngraham.jpg"
+              alt="John Graham"
+              placeholder="blurred"
+              layout="constrained"
+              width={260}
+              height={260}
+            />
           </div>
         </div>
       </div>

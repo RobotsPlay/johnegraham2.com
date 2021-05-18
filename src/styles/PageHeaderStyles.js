@@ -32,6 +32,7 @@ const PageHeaderStyles = styled.header`
     border: var(--gutter-quarter) solid var(--medpurple);
     max-width: 260px;
     margin-bottom: -100%;
+    background-color: var(--medpurple);
 
     @media (max-width: 767px) {
       max-width: 150px;
@@ -40,7 +41,8 @@ const PageHeaderStyles = styled.header`
     }
   }
 
-  .bio-image img {
+  .bio-image img,
+  .bio-image .gatsby-image-wrapper-constrained {
     display: block;
     border-radius: 50%;
     max-width: 100%;

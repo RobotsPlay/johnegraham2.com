@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import {
   FaHtml5,
@@ -16,20 +15,10 @@ import { SiWebpack } from 'react-icons/si'
 import ContentSection from '../components/ContentSection'
 import Button from '../components/Button'
 import ContactPanel from '../components/ContactPanel'
+import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = ({ data }) => {
   const [contactOpen, setContactOpen] = useState(false)
-
-  const getImageByFilename = (allImages, filename) => {
-    let matchedImage = null
-    allImages.edges.forEach(edge => {
-      if (edge.node.fluid.originalName === filename) {
-        matchedImage = edge.node
-      }
-    })
-
-    return matchedImage
-  }
 
   const toggleContactPanel = e => {
     e?.preventDefault()
@@ -76,9 +65,13 @@ const IndexPage = ({ data }) => {
         <div className="flex-row flex-align-center flex-row-mobile-column-reverse">
           <div className="flex-col flex-col-4 flex-col-mobile-full">
             <div className="content-image">
-              <Img
-                fluid={data.file.childImageSharp.fluid}
+              <StaticImage
+                src="../assets/img/code.jpg"
                 alt="Code in a text editor"
+                placeholder="blurred"
+                layout="constrained"
+                width={400}
+                height={400}
               />
             </div>
           </div>
@@ -148,13 +141,15 @@ const IndexPage = ({ data }) => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Img
-                className="project-list-image"
-                fluid={
-                  getImageByFilename(data.allImageSharp, 'kbb-autotrader.jpg')
-                    ?.fluid
-                }
+              <StaticImage
+                src="../assets/img/kbb-autotrader.jpg"
                 alt="KBB Autotrader OEM Homepage"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
+                className="project-list-image"
+                width={500}
+                height={500}
               />
 
               <div className="project-list-title">Camp 360</div>
@@ -173,13 +168,15 @@ const IndexPage = ({ data }) => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Img
-                className="project-list-image"
-                fluid={
-                  getImageByFilename(data.allImageSharp, 'b2b-autotrader.jpg')
-                    ?.fluid
-                }
+              <StaticImage
+                src="../assets/img/b2b-autotrader.jpg"
                 alt="B2B Autotrader Homepage"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
+                className="project-list-image"
+                width={500}
+                height={500}
               />
 
               <div className="project-list-title">b2b.autotrader.com</div>
@@ -201,12 +198,15 @@ const IndexPage = ({ data }) => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Img
-                className="project-list-image"
-                fluid={
-                  getImageByFilename(data.allImageSharp, 'monarch.jpg')?.fluid
-                }
+              <StaticImage
+                src="../assets/img/monarch.jpg"
                 alt="Monarch ESG Homepage"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
+                className="project-list-image"
+                width={500}
+                height={500}
               />
 
               <div className="project-list-title">Monarch ESG</div>
@@ -235,13 +235,15 @@ const IndexPage = ({ data }) => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Img
-                className="project-list-image"
-                fluid={
-                  getImageByFilename(data.allImageSharp, 'monarchmap.jpg')
-                    ?.fluid
-                }
+              <StaticImage
+                src="../assets/img/monarchmap.jpg"
                 alt="Monarch ESG State Map Tool"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
+                className="project-list-image"
+                width={500}
+                height={500}
               />
 
               <div className="project-list-title">
@@ -264,12 +266,15 @@ const IndexPage = ({ data }) => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Img
-                className="project-list-image"
-                fluid={
-                  getImageByFilename(data.allImageSharp, 'sacscoc.jpg')?.fluid
-                }
+              <StaticImage
+                src="../assets/img/sacscoc.jpg"
                 alt="SACS COC Instituion Search Page"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
+                className="project-list-image"
+                width={500}
+                height={500}
               />
 
               <div className="project-list-title">
@@ -291,10 +296,15 @@ const IndexPage = ({ data }) => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Img
-                className="project-list-image"
-                fluid={getImageByFilename(data.allImageSharp, 'act.jpg')?.fluid}
+              <StaticImage
+                src="../assets/img/act.jpg"
                 alt="ACT Online Assessment Planner Tool"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
+                className="project-list-image"
+                width={500}
+                height={500}
               />
 
               <div className="project-list-title">ACT Assessment Planner</div>
@@ -314,12 +324,15 @@ const IndexPage = ({ data }) => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Img
-                className="project-list-image"
-                fluid={
-                  getImageByFilename(data.allImageSharp, 'nada.jpg')?.fluid
-                }
+              <StaticImage
+                src="../assets/img/nada.jpg"
                 alt="NADA Signup Page"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
+                className="project-list-image"
+                width={500}
+                height={500}
               />
 
               <div className="project-list-title">
@@ -349,10 +362,15 @@ const IndexPage = ({ data }) => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Img
-                className="project-list-image"
-                fluid={getImageByFilename(data.allImageSharp, 'rvs.jpg')?.fluid}
+              <StaticImage
+                src="../assets/img/rvs.jpg"
                 alt="RVs.Autorader.com Search Results Page"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
+                className="project-list-image"
+                width={500}
+                height={500}
               />
 
               <div className="project-list-title">
@@ -375,12 +393,15 @@ const IndexPage = ({ data }) => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Img
-                className="project-list-image"
-                fluid={
-                  getImageByFilename(data.allImageSharp, 'express.jpg')?.fluid
-                }
+              <StaticImage
+                src="../assets/img/express.jpg"
                 alt="Manheim Express Homepage"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
+                className="project-list-image"
+                width={500}
+                height={500}
               />
 
               <div className="project-list-title">
@@ -398,14 +419,19 @@ const IndexPage = ({ data }) => {
 
           <li className="project-list-project">
             <a
-              href="https://prism.coxautoinc.com/Getting-Started"
+              href="#"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Img
+              <StaticImage
+                src="../assets/img/jg2.jpg"
+                alt="johnegraham2.com"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
                 className="project-list-image"
-                fluid={getImageByFilename(data.allImageSharp, 'jg2.jpg')?.fluid}
-                alt="Cox Automotive Prism Library Homepage"
+                width={500}
+                height={500}
               />
 
               <div className="project-list-title">John Graham's Portfolio</div>
