@@ -4,23 +4,23 @@ const ContentSectionStyles = styled.section`
   padding: var(--gutter-double) 0;
 
   &:nth-child(even) {
-    background: var(--lightyellow);
-    color: var(--brown);
-    border-top: 1px solid var(--yellow);
-    border-bottom: 1px solid var(--yellow);
+    background: var(--verylightgray);
+    color: var(--black);
+    border-top: 1px solid var(--lightgray);
+    border-bottom: 1px solid var(--lightgray);
   }
 
   h1,
   h2,
   h3 {
-    border-bottom: 1px solid var(--lightgreen);
+    border-bottom: 1px solid var(--lightgray);
     padding-bottom: 4px;
     margin-bottom: var(--gutter);
   }
 
   .content-image {
     width: 100%;
-    background: var(--darkorange);
+    background: var(--purple);
     padding: 1px;
 
     @media (max-width: 767px) {
@@ -59,16 +59,19 @@ const ContentSectionStyles = styled.section`
         display: block;
         width: 100%;
         height: 100%;
-        background: var(--verylightgreen);
-        border: 1px solid var(--lightgreen);
+        background: var(--white);
+        border: 1px solid var(--lightgray);
+        box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .1);
         padding: var(--gutter);
         text-decoration: none;
+        color: var(--black);
       }
     }
 
     &-image {
       display: block;
       max-width: 100%;
+      border: 1px solid var(--lightgray);
     }
 
     &-title {

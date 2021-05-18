@@ -10,7 +10,7 @@ const Header = ({ images }) => (
         <div className="flex-col flex-col-8 flex-col-mobile-full">
           <div className="text-right text-center-mobile">
             <h1 className="site-title">John Graham</h1>
-            <h2 className="site-subtitle">FrontEnd Web Developer</h2>
+            <h2 className="site-subtitle">Front-End Web Developer</h2>
           </div>
         </div>
 

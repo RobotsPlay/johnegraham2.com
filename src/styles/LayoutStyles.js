@@ -8,7 +8,7 @@ const LayoutStyles = createGlobalStyle`
   }
 
   .page-main {
-    color: var(--brown);
+    color: var(--black);
   }
 
   .container {

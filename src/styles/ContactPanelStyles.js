@@ -48,8 +48,8 @@ const ContactPanelStyles = styled.div`
     padding: 0.6rem;
     margin-top: 0.6rem;
     font-size: 2rem;
-    border: 1px solid var(--lightgreen);
-    color: var(--orange);
+    border: 1px solid var(--lightgray);
+    color: var(--purple);
 
     &.textarea {
       resize: none;
@@ -59,11 +59,12 @@ const ContactPanelStyles = styled.div`
     &.checkbox {
       width: auto;
       margin-right: 1.8rem;
+      transform: translateY(-2px);
     }
 
     &:focus {
       outline: none;
-      border-color: var(--green);
+      border-color: var(--medpurple);
     }
   }
 
@@ -75,7 +76,7 @@ const ContactPanelStyles = styled.div`
     right: 0;
     font-size: 3.2rem;
     padding: var(--gutter-half);
-    color: var(--lightgreen);
+    color: var(--medpurple);
     cursor: pointer;
 
     &:focus,

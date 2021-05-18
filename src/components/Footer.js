@@ -12,7 +12,7 @@ const Footer = () => (
           </div>
         </div>
         <div className="flex-col flex-col-6 flex-col-mobile-full text-right text-center-mobile">
-          <SocialLinks />
+          <SocialLinks className="white" />
         </div>
       </div>
     </div>

@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 const ButtonStyles = styled.button`
-  background: var(--green);
+  background: var(--purple);
   color: var(--white);
-  border: 0.45rem solid var(--orange);
+  border: 0.45rem solid var(--purple);
   display: inline-block;
   padding: 0.9rem 1.8rem;
   font-size: 2rem;
@@ -11,9 +11,9 @@ const ButtonStyles = styled.button`
   cursor: pointer;
 
   &:hover {
-    background: var(--verylightgreen);
-    color: var(--green);
-    border-color: var(--lightgreen);
+    background: var(--medpurple);
+    color: var(--white);
+    border-color: var(--purple);
   }
 `
 

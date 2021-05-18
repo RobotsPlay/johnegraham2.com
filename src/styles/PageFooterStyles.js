@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 const PageFooterStyles = styled.footer`
   padding: var(--gutter-half) 0;
-  background: var(--lightgreen);
-  color: var(--black);
+  background: var(--purple);
+  color: var(--white);
 
   @media (max-width: 767px) {
     padding: var(--gutter) 0;

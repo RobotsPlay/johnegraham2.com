@@ -101,7 +101,7 @@ const Typography = createGlobalStyle`
 
   
   a {
-    color: var(--green);
+    color: var(--medpurple);
     text-decoration: underline;
   }
 

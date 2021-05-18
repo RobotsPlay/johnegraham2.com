@@ -20,7 +20,7 @@ const SkillListStyles = createGlobalStyle`
     }
 
     &-icon {
-      color: var(--green);
+      color: var(--purple);
       font-size: 6rem;
       margin-right: var(--gutter-half);
     }

@@ -19,6 +19,10 @@ const SocialLinksStyles = styled.div`
     }
   }
 
+  &.white .social-link {
+    color: var(--white);
+  }
+
   &.spread {
     display: flex;
     justify-content: center;

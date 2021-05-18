@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 const PageHeaderStyles = styled.header`
   padding: var(--gutter) 0;
-  background: var(--green);
-  color: var(--lightyellow);
-  border-top: 0.4rem solid var(--lightgreen);
-  border-bottom: 1.2rem solid var(--lightgreen);
+  background: var(--purple);
+  color: var(--white);
+  border-top: 0.4rem solid var(--medpurple);
+  border-bottom: 1.2rem solid var(--medpurple);
 
   .site-title {
     font-size: 5rem;
@@ -16,7 +16,7 @@ const PageHeaderStyles = styled.header`
     font-weight: 500;
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid var(--lightgreen);
+    border-top: 1px solid var(--white);
     width: 70%;
     margin-left: 30%;
 
@@ -29,8 +29,8 @@ const PageHeaderStyles = styled.header`
   .bio-image {
     transform: translateY(-7.2rem);
     border-radius: 50%;
-    border: var(--gutter-half) solid var(--orange);
-    max-width: 340px;
+    border: var(--gutter-quarter) solid var(--medpurple);
+    max-width: 260px;
     margin-bottom: -100%;
 
     @media (max-width: 767px) {

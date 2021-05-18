@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => {
             <h2>A Little Bit About Me</h2>
 
             <p>
-              I like to build things, specifically the frontends of websites.
+              I like to build things, specifically the front ends of websites.
             </p>
 
             <p>
@@ -58,7 +58,7 @@ const IndexPage = ({ data }) => {
               </a>{' '}
               for over 11 years and have been the lead front end developer since
               the end of 2014. In addition to assembling HTML, CSS and
-              Javascript, I lead a team of 5 developers. I am responsible for
+              Javascript, I lead a team of 6 developers. I am responsible for
               developing and implementing best practices and processes for the
               team.
             </p>
@@ -86,14 +86,14 @@ const IndexPage = ({ data }) => {
           <div className="flex-col flex-col-8 flex-col-mobile-full">
             <ul>
               <li>
-                I have <strong>12+ years</strong> experience in frontend web
+                I have <strong>12+ years</strong> experience in front-end web
                 development.
               </li>
               <li>
-                I have <strong>6+ years</strong> as frontend lead developer.
+                I have <strong>6+ years</strong> as front-end lead developer.
               </li>
               <li>
-                I have managed a team of <strong>up to 7</strong> frontend devs.
+                I have managed a team of <strong>up to 7</strong> front-end devs.
               </li>
               <li>
                 Over the years, I have built dozens and dozens of websites,
@@ -139,7 +139,7 @@ const IndexPage = ({ data }) => {
       </ContentSection>
 
       <ContentSection>
-        <h2>FrontEnd Web Development Projects</h2>
+        <h2>Front-End Web Development Projects</h2>
 
         <ul className="project-list">
           <li className="project-list-project">
@@ -251,7 +251,7 @@ const IndexPage = ({ data }) => {
               <div className="project-list-description">
                 This Vue.js app loads and displays state data from an API. It
                 presents state data based on the user's ineraction with an SVG
-                map. I build this entire app.
+                map. I build this entire (m)app.
               </div>
 
               <div className="project-list-note">*for AirTight Design</div>
