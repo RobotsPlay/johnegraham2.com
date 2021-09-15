@@ -47,7 +47,7 @@ const IndexPage = ({ data }) => {
               </a>{' '}
               for over 12 years and have been the lead front end developer since
               the end of 2014. In addition to assembling HTML, CSS and
-              Javascript, I lead a team of 6 developers. I am responsible for
+              Javascript, I lead a team of 7 developers. I am responsible for
               developing and implementing best practices and processes for the
               team.
             </p>
