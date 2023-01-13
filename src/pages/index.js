@@ -45,9 +45,9 @@ const IndexPage = ({ data }) => {
               >
                 AirTight Design
               </a>{' '}
-              for over 12 years and have been the lead front end developer since
-              the end of 2014. In addition to assembling HTML, CSS and
-              Javascript, I lead a team of 7 developers. I am responsible for
+              for over 13 years and have been the lead front end developer since
+              the start of 2013. In addition to assembling HTML, CSS and
+              Javascript, I lead a team of 5 developers. I am responsible for
               developing and implementing best practices and processes for the
               team.
             </p>
@@ -79,11 +79,11 @@ const IndexPage = ({ data }) => {
           <div className="flex-col flex-col-8 flex-col-mobile-full">
             <ul>
               <li>
-                I have <strong>13+ years</strong> experience in front-end web
+                I have <strong>15+ years</strong> experience in front-end web
                 development.
               </li>
               <li>
-                I have <strong>7+ years</strong> as front-end lead developer.
+                I have <strong>9+ years</strong> as front-end lead developer.
               </li>
               <li>
                 I have managed a team of <strong>up to 7</strong> front-end devs.
