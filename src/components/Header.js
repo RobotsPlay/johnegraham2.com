@@ -17,7 +17,7 @@ const Header = () => (
         <div className="flex-col flex-col-4 flex-col-mobile-full">
           <div className="bio-image">
             <StaticImage
-              src="../assets/img/johngraham.jpg"
+              src="../assets/img/johngraham2.jpg"
               alt="John Graham"
               placeholder="blurred"
               layout="constrained"
