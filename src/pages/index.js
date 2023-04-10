@@ -253,7 +253,7 @@ const IndexPage = ({ data }) => {
               <div className="project-list-description">
                 This Vue.js app loads and displays state data from an API. It
                 presents state data based on the user's ineraction with an SVG
-                map. I build this entire (m)app.
+                map. I built this entire (m)app.
               </div>
 
               <div className="project-list-note">*for AirTight Design</div>
@@ -283,7 +283,7 @@ const IndexPage = ({ data }) => {
 
               <div className="project-list-description">
                 This Vue.js app searches, loads and dislays institution data
-                loaded from an API. I build this entire app.
+                loaded from an API. I built this entire app.
               </div>
 
               <div className="project-list-note">*for AirTight Design</div>
@@ -311,7 +311,7 @@ const IndexPage = ({ data }) => {
 
               <div className="project-list-description">
                 This Vue.js app creates a grid of current and propsed solutions
-                based on user input. I build this entire app.
+                based on user input. I built this entire app.
               </div>
 
               <div className="project-list-note">*for AirTight Design</div>
