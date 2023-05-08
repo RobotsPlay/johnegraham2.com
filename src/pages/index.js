@@ -251,7 +251,7 @@ const IndexPage = ({ data }) => {
               </div>
 
               <div className="project-list-description">
-                This Vue.js app filters and displays Smith Currie's attorneys loaded from WordPress via the REST API. I built this entire app.
+                This Vue.js app filters and displays Smith Currie's attorneys loaded from WordPress via the REST API. Users can search for attorneys by name or filter results by a number of parameters. I built this entire app.
               </div>
 
               <div className="project-list-note">*for AirTight Design</div>
