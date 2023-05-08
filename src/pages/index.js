@@ -231,6 +231,35 @@ const IndexPage = ({ data }) => {
         <ul className="project-list">
           <li className="project-list-project">
             <a
+              href="https://www.smithcurrie.com/professionals/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <StaticImage
+                src="../assets/img/smith-currie.jpg"
+                alt="Smith Currie Attorney Search"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
+                className="project-list-image"
+                width={500}
+                height={500}
+              />
+
+              <div className="project-list-title">
+                Smith Currie Attorney Search
+              </div>
+
+              <div className="project-list-description">
+                This Vue.js app filters and displays Smith Currie's attorneys loaded from WordPress via the REST API. I built this entire app.
+              </div>
+
+              <div className="project-list-note">*for AirTight Design</div>
+            </a>
+          </li>
+
+          <li className="project-list-project">
+            <a
               href="https://www.monarchprivate.com/esg-investment-types/state-tax-credits/"
               rel="noopener noreferrer"
               target="_blank"
