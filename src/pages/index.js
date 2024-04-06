@@ -251,7 +251,7 @@ const IndexPage = ({ data }) => {
               </div>
 
               <div className="project-list-description">
-                This React.js app pulls location data from the WordPress API and displays the locations on a Google Map using. Users can filter the locations by project and credit type.
+                This React.js app pulls location data from the WordPress API and displays the locations on a Google Map. Users can filter the locations by project and credit type.
               </div>
 
               <div className="project-list-note">*for AirTight Design</div>
