@@ -226,6 +226,127 @@ const IndexPage = ({ data }) => {
       </ContentSection>
 
       <ContentSection>
+        <h2>React.js Apps</h2>
+
+        <ul className="project-list">
+        <li className="project-list-project">
+            <a
+              href="https://www.monarchprivate.com/project-map/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <StaticImage
+                src="../assets/img/monarch-project-map.jpg"
+                alt="Monarch Private Capital Project Map"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
+                className="project-list-image"
+                width={500}
+                height={500}
+              />
+
+              <div className="project-list-title">
+                Monarch Private Capital Project Map
+              </div>
+
+              <div className="project-list-description">
+                This React.js app pulls location data from the WordPress API and displays the locations on a Google Map using. Users can filter the locations by project and credit type.
+              </div>
+
+              <div className="project-list-note">*for AirTight Design</div>
+            </a>
+          </li>
+
+          <li className="project-list-project">
+            <a
+              href="https://rvs.autotrader.com/rvs-for-sale/airstream-ambassador-for-sale?year_max=1976&year_min=1965"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <StaticImage
+                src="../assets/img/rvs.jpg"
+                alt="RVs.Autorader.com Search Results Page"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
+                className="project-list-image"
+                width={500}
+                height={500}
+              />
+
+              <div className="project-list-title">
+                RVs on Autotrader Search Results
+              </div>
+
+              <div className="project-list-description">
+                This React.js app allows a user to search for available RVs. I
+                worked with the development team that built all of the interface
+                components.
+              </div>
+
+              <div className="project-list-note">*for AirTight Design</div>
+            </a>
+          </li>
+
+          <li className="project-list-project">
+            <a
+              href="https://www.mymanheim.com/express/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <StaticImage
+                src="../assets/img/express.jpg"
+                alt="Manheim Express Homepage"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
+                className="project-list-image"
+                width={500}
+                height={500}
+              />
+
+              <div className="project-list-title">
+                Contributed React Native components on Manheim Express
+              </div>
+
+              <div className="project-list-description">
+                I built a color picker component and a hanful of others in React
+                Native for this mobile app.
+              </div>
+
+              <div className="project-list-note">*for AirTight Design</div>
+            </a>
+          </li>
+
+          <li className="project-list-project">
+            <a
+              href="#"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <StaticImage
+                src="../assets/img/jg2.jpg"
+                alt="johnegraham2.com"
+                placeholder="blurred"
+                loading="lazy"
+                layout="constrained"
+                className="project-list-image"
+                width={500}
+                height={500}
+              />
+
+              <div className="project-list-title">John Graham's Portfolio</div>
+
+              <div className="project-list-description">
+                This very site is built using Gatsby.js and React.
+              </div>
+            </a>
+          </li>
+        </ul>
+      </ContentSection>
+
+      <ContentSection>
         <h2>Vue.js Apps</h2>
 
         <ul className="project-list">
@@ -376,98 +497,6 @@ const IndexPage = ({ data }) => {
               </div>
 
               <div className="project-list-note">*for AirTight Design</div>
-            </a>
-          </li>
-        </ul>
-      </ContentSection>
-
-      <ContentSection>
-        <h2>React.js Apps</h2>
-
-        <ul className="project-list">
-          <li className="project-list-project">
-            <a
-              href="https://rvs.autotrader.com/rvs-for-sale/airstream-ambassador-for-sale?year_max=1976&year_min=1965"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <StaticImage
-                src="../assets/img/rvs.jpg"
-                alt="RVs.Autorader.com Search Results Page"
-                placeholder="blurred"
-                loading="lazy"
-                layout="constrained"
-                className="project-list-image"
-                width={500}
-                height={500}
-              />
-
-              <div className="project-list-title">
-                RVs on Autotrader Search Results
-              </div>
-
-              <div className="project-list-description">
-                This React.js app allows a user to search for available RVs. I
-                worked with the development team that built all of the interface
-                components.
-              </div>
-
-              <div className="project-list-note">*for AirTight Design</div>
-            </a>
-          </li>
-
-          <li className="project-list-project">
-            <a
-              href="https://www.mymanheim.com/express/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <StaticImage
-                src="../assets/img/express.jpg"
-                alt="Manheim Express Homepage"
-                placeholder="blurred"
-                loading="lazy"
-                layout="constrained"
-                className="project-list-image"
-                width={500}
-                height={500}
-              />
-
-              <div className="project-list-title">
-                Contributed React Native components on Manheim Express
-              </div>
-
-              <div className="project-list-description">
-                I built a color picker component and a hanful of others in React
-                Native for this mobile app.
-              </div>
-
-              <div className="project-list-note">*for AirTight Design</div>
-            </a>
-          </li>
-
-          <li className="project-list-project">
-            <a
-              href="#"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <StaticImage
-                src="../assets/img/jg2.jpg"
-                alt="johnegraham2.com"
-                placeholder="blurred"
-                loading="lazy"
-                layout="constrained"
-                className="project-list-image"
-                width={500}
-                height={500}
-              />
-
-              <div className="project-list-title">John Graham's Portfolio</div>
-
-              <div className="project-list-description">
-                This very site is built using Gatsby.js and React.
-              </div>
             </a>
           </li>
         </ul>
