@@ -5,16 +5,6 @@ import SocialLinksStyles from '../styles/SocialLinksStyles'
 const SocialLinks = ({ className = '' }) => (
   <SocialLinksStyles className={className}>
     <a
-      href="https://twitter.com/RobotsPlay"
-      rel="noopener noreferrer"
-      target="_blank"
-      title="@RobotsPlay"
-      className="social-link"
-    >
-      <FaTwitter />
-    </a>
-
-    <a
       href="https://codepen.io/RobotsPlay"
       rel="noopener noreferrer"
       target="_blank"
